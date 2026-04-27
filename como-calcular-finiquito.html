@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Cómo calcular tu finiquito en México? | Guía fácil</title>
+  <meta name="description" content="Aprende cómo calcular tu finiquito en México paso a paso. Explicación sencilla, ejemplo práctico y enlace a una calculadora gratuita." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Calculadora de Finiquito en México" />
+  <link rel="canonical" href="https://kenrobert7.github.io/calculadora-finiquito-mexico/como-calcular-finiquito.html" />
+
+  <meta property="og:title" content="¿Cómo calcular tu finiquito en México?" />
+  <meta property="og:description" content="Guía sencilla para entender qué incluye el finiquito, cómo se calcula y cómo usar una calculadora gratuita." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://kenrobert7.github.io/calculadora-finiquito-mexico/como-calcular-finiquito.html" />
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --success: #16a34a;
+      --soft: #eff6ff;
+      --warning: #fff7ed;
+      --warning-border: #fdba74;
+      --radius: 18px;
+      --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .hero, .section, .cta, .faq-item {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: var(--soft);
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.15;
+      margin-bottom: 12px;
+      color: #0f172a;
+    }
+
+    .lead {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 70ch;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .section {
+      padding: 22px;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      margin-bottom: 12px;
+      color: #0f172a;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin: 18px 0 8px;
+      color: #0f172a;
+    }
+
+    p {
+      margin-bottom: 14px;
+    }
+
+    ul, ol {
+      margin: 10px 0 16px 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .callout {
+      background: var(--soft);
+      border-left: 5px solid var(--primary);
+      padding: 16px;
+      border-radius: 14px;
+      margin: 14px 0 18px;
+    }
+
+    .note {
+      background: var(--warning);
+      border: 1px solid var(--warning-border);
+      padding: 14px 16px;
+      border-radius: 14px;
+      color: #7c2d12;
+      margin-top: 14px;
+    }
+
+    .calc-card {
+      position: sticky;
+      top: 18px;
+      align-self: start;
+      padding: 20px;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    }
+
+    .calc-card h2 {
+      margin-bottom: 10px;
+    }
+
+    .calc-card p {
+      color: var(--muted);
+    }
+
+    .button-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 700;
+      padding: 12px 16px;
+      border-radius: 12px;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn.secondary {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    .example {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-top: 12px;
+    }
+
+    .example table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.98rem;
+    }
+
+    .example th,
+    .example td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+    }
+
+    .example th {
+      background: #f8fafc;
+      width: 42%;
+      color: #0f172a;
+    }
+
+    .faq {
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq-item {
+      padding: 18px 20px;
+    }
+
+    .faq-item h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+      padding: 6px 0 28px;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--line);
+      margin: 18px 0;
+    }
+
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .calc-card {
+        position: static;
+      }
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 12px;
+      }
+
+      .hero, .section, .faq-item, .calc-card {
+        padding: 18px;
+      }
+
+      .example th,
+      .example td {
+        display: block;
+        width: 100%;
+      }
+
+      .example th {
+        padding-bottom: 4px;
+        border-bottom: none;
+      }
+
+      .example tr {
+        display: block;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .example tr:last-child {
+        border-bottom: none;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "¿Cómo calcular tu finiquito en México?",
+    "description": "Guía sencilla para entender qué incluye el finiquito, cómo se calcula y cómo usar una calculadora gratuita.",
+    "mainEntityOfPage": "https://kenrobert7.github.io/calculadora-finiquito-mexico/como-calcular-finiquito.html",
+    "about": {
+      "@type": "Thing",
+      "name": "Finiquito en México"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Calculadora de Finiquito en México"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es el finiquito?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El finiquito es el pago que se entrega al terminar la relación laboral e incluye prestaciones proporcionales y salarios pendientes, según corresponda."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué incluye el finiquito?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Normalmente incluye aguinaldo proporcional, vacaciones no disfrutadas, prima vacacional y salarios pendientes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El finiquito y la liquidación son lo mismo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. El finiquito cubre prestaciones pendientes; la liquidación puede incluir indemnización y otros pagos cuando hay despido injustificado."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">Guía rápida</span>
+      <h1>¿Cómo calcular tu finiquito en México?</h1>
+      <p class="lead">
+        Si terminaste una relación laboral y quieres saber cuánto podrías recibir, aquí tienes una explicación sencilla,
+        paso a paso, con un ejemplo práctico y una calculadora gratuita para hacer el estimado más rápido.
+      </p>
+    </section>
+
+    <div class="grid">
+      <article>
+        <section class="section">
+          <h2>Respuesta rápida</h2>
+          <p>
+            Para calcular un finiquito normalmente se consideran conceptos como el aguinaldo proporcional,
+            las vacaciones pendientes, la prima vacacional y los salarios que todavía estén sin pagar.
+            Si la salida fue por despido injustificado, entonces el caso puede cambiar y entrar a un escenario de liquidación.
+          </p>
+
+          <div class="callout">
+            <strong>Idea simple:</strong> primero suma lo que te deben por prestaciones y salario; después revisa si tu salida
+            también puede incluir liquidación.
+          </div>
+
+          <p>
+            En México, las prestaciones mínimas más comunes están marcadas por la ley y por criterios oficiales de PROFEDET:
+            aguinaldo de al menos 15 días, vacaciones que comienzan con 12 días el primer año, prima vacacional de al menos 25%
+            y prima de antigüedad de 12 días por año en supuestos específicos. En caso de despido injustificado, la PROFEDET
+            señala que puede proceder una indemnización equivalente a 3 meses de salario, además del pago de prestaciones adeudadas. :contentReference[oaicite:1]{index=1}
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>¿Qué incluye el finiquito?</h2>
+          <p>
+            Aunque cada caso puede variar, hay conceptos que aparecen mucho en un cálculo de finiquito:
+          </p>
+          <ul>
+            <li><strong>Aguinaldo proporcional:</strong> la parte que corresponde por el tiempo trabajado en el año. El mínimo legal es de 15 días de salario al año. :contentReference[oaicite:2]{index=2}</li>
+            <li><strong>Vacaciones pendientes:</strong> los días de vacaciones que no alcanzaste a tomar. El primer año corresponden 12 días laborables y aumentan conforme a la antigüedad. :contentReference[oaicite:3]{index=3}</li>
+            <li><strong>Prima vacacional:</strong> un extra sobre el pago de vacaciones; la ley marca un mínimo de 25%. :contentReference[oaicite:4]{index=4}</li>
+            <li><strong>Salario pendiente:</strong> los días que ya trabajaste pero todavía no te han pagado.</li>
+          </ul>
+
+          <p>
+            Si además te separan por despido injustificado, puede haber una liquidación con indemnización y otros conceptos
+            adicionales. La PROFEDET explica que en ese escenario puedes reclamar, entre otras cosas, 3 meses de salario
+            y lo que te deban de prestaciones. :contentReference[oaicite:5]{index=5}
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Cómo calcularlo paso a paso</h2>
+          <ol>
+            <li><strong>Identifica tu salario mensual.</strong> A partir de ahí se obtiene el salario diario para calcular proporcionales.</li>
+            <li><strong>Cuenta el tiempo trabajado.</strong> Esto ayuda a saber qué parte del aguinaldo y otras prestaciones te corresponde.</li>
+            <li><strong>Revisa tus vacaciones pendientes.</strong> Si no las tomaste, normalmente deben pagarse de forma proporcional o como parte del finiquito.</li>
+            <li><strong>Agrega la prima vacacional.</strong> Esa prima no debería ser menor al 25% del salario correspondiente a los días de vacaciones. :contentReference[oaicite:6]{index=6}</li>
+            <li><strong>Suma el salario pendiente.</strong> Son los días ya laborados que todavía no te han cubierto.</li>
+            <li><strong>Revisa si aplica liquidación.</strong> Si la terminación fue injustificada, el cálculo puede cambiar bastante. :contentReference[oaicite:7]{index=7}</li>
+          </ol>
+
+          <div class="example">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Ejemplo de salario mensual</th>
+                  <td>$12,000</td>
+                </tr>
+                <tr>
+                  <th>Salario diario aproximado</th>
+                  <td>$400</td>
+                </tr>
+                <tr>
+                  <th>Días de aguinaldo proporcional</th>
+                  <td>Depende del tiempo trabajado</td>
+                </tr>
+                <tr>
+                  <th>Vacaciones pendientes</th>
+                  <td>Se pagan con base en los días no disfrutados</td>
+                </tr>
+                <tr>
+                  <th>Prima vacacional</th>
+                  <td>Al menos 25% sobre vacaciones</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="note">
+            Este ejemplo es solo orientativo. Cada caso cambia según salario, antigüedad, fecha de salida y motivo de terminación.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>¿Cuándo usar la calculadora?</h2>
+          <p>
+            Úsala cuando quieras un estimado rápido antes de hablar con tu empresa, revisar tu recibo final o
+            comparar si el pago que te ofrecen tiene sentido. La calculadora te ayuda a ordenar los conceptos
+            más comunes para que no tengas que hacer cuentas en tu cabeza.
+          </p>
+
+          <div class="button-row">
+            <a class="btn" href="index.html">Ir a la calculadora</a>
+            <a class="btn secondary" href="#faq">Ver preguntas frecuentes</a>
+          </div>
+        </section>
+
+        <section class="section" id="faq">
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq">
+            <div class="faq-item">
+              <h3>¿El finiquito siempre incluye liquidación?</h3>
+              <p>No. El finiquito y la liquidación no son lo mismo. La liquidación suele entrar cuando hay despido injustificado u otro supuesto especial. :contentReference[oaicite:8]{index=8}</p>
+            </div>
+
+            <div class="faq-item">
+              <h3>¿Cuántos días de aguinaldo me corresponden?</h3>
+              <p>El mínimo legal en México es de 15 días de salario al año; si no trabajaste el año completo, te corresponde la parte proporcional. :contentReference[oaicite:9]{index=9}</p>
+            </div>
+
+            <div class="faq-item">
+              <h3>¿Cuántos días de vacaciones debo considerar?</h3>
+              <p>El primer año son 12 días laborables y aumentan conforme a la antigüedad. :contentReference[oaicite:10]{index=10}</p>
+            </div>
+
+            <div class="faq-item">
+              <h3>¿La prima vacacional tiene mínimo?</h3>
+              <p>Sí, la referencia oficial marca al menos 25% sobre el salario correspondiente al periodo vacacional. :contentReference[oaicite:11]{index=11}</p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <aside class="section calc-card">
+        <h2>Usa la calculadora</h2>
+        <p>
+          Si ya quieres un estimado más rápido, vuelve a la herramienta principal y llena tus datos.
+        </p>
+
+        <div class="divider"></div>
+
+        <h3>Qué datos te va a pedir</h3>
+        <ul>
+          <li>Fecha de ingreso</li>
+          <li>Fecha de baja</li>
+          <li>Salario mensual</li>
+          <li>Días de salario pendiente</li>
+          <li>Días de aguinaldo</li>
+          <li>Prima vacacional</li>
+          <li>Días de vacaciones por año</li>
+          <li>Días de vacaciones pendientes</li>
+        </ul>
+
+        <p class="note">
+          Si tu caso es complejo, la calculadora sirve como estimado inicial. Para un caso legal exacto, conviene revisar la situación completa.
+        </p>
+
+        <div class="button-row">
+          <a class="btn" href="index.html">Abrir calculadora</a>
+          <a class="btn secondary" href="sitemap.xml">Ver sitemap</a>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <p>
+        Guía informativa sobre finiquito y liquidación en México. No sustituye asesoría legal personalizada.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
