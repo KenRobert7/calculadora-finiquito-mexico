@@ -4,219 +4,229 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="NUse3RTQ4nH8lKr9TLLVySHKW9p5nSlZPlroxplimTU" />
-  <meta name="description" content="Calcula tu finiquito en México. Incluye aguinaldo, vacaciones, prima vacacional e ISR estimado.">
-  <meta name="robots" content="index, follow">
+
   <title>Calculadora de Finiquito en México | Gratis y Actualizada</title>
+
+  <meta name="description" content="Calcula tu finiquito en México gratis. Incluye aguinaldo proporcional, vacaciones, prima vacacional, ISR estimado y liquidación laboral.">
+
+  <meta name="robots" content="index, follow">
+
+  <!-- Mejora SEO -->
   <link rel="canonical" href="https://kenrobert7.github.io/calculadora-finiquito-mexico/" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <main class="container">
-    <div class="page-shell">
 
-      <section class="card hero-card">
-        <header class="header">
-          <h1>Calculadora de Finiquito en México</h1>
+    <!-- 🔥 HEADER -->
+    <section class="card">
+      <header class="header">
+        <h1>Calculadora de Finiquito en México</h1>
 
-          <p>
-            Calcula tu finiquito fácilmente. Esta herramienta incluye aguinaldo proporcional,
-            vacaciones, prima vacacional, ISR estimado y salario pendiente.
-          </p>
+        <p>
+          Calcula tu finiquito fácilmente. Esta herramienta incluye aguinaldo proporcional,
+          vacaciones, prima vacacional, ISR estimado y salario pendiente.
+        </p>
 
-          <h2>¿Qué incluye el finiquito?</h2>
-          <ul>
-            <li>Aguinaldo proporcional</li>
-            <li>Vacaciones pendientes</li>
-            <li>Prima vacacional</li>
-            <li>Salarios no pagados</li>
-          </ul>
+        <h2>¿Qué incluye el finiquito?</h2>
+        <ul>
+          <li>Aguinaldo proporcional</li>
+          <li>Vacaciones pendientes</li>
+          <li>Prima vacacional</li>
+          <li>Salarios no pagados</li>
+        </ul>
 
-          <p>
-            Ingresa tus datos para obtener un estimado claro del pago final.
-          </p>
+        <p>
+          Ingresa tus datos para obtener un estimado claro del pago final.
+        </p>
 
-          <p>
-            📘 Aprende paso a paso aquí:
-            <a href="como-calcular-finiquito.html">
-              Cómo calcular tu finiquito en México
-            </a>
-          </p>
+        <!-- 🔗 LINK A TU NUEVA PÁGINA -->
+        <p>
+          📘 Aprende paso a paso aquí:
+          <a href="como-calcular-finiquito.html">
+            Cómo calcular tu finiquito en México
+          </a>
+        </p>
 
-          <p>
-            ¿Quieres saber cuánto te corresponde exactamente? Usa la calculadora de abajo.
-          </p>
-        </header>
+        <p>
+          ¿Quieres saber cuánto te corresponde exactamente? Usa la calculadora de abajo.
+        </p>
+      </header>
 
-        <form id="calculatorForm" class="form">
-          <div class="section-title">Fechas</div>
+      <!-- 🔢 FORMULARIO -->
+      <form id="calculatorForm" class="form">
+        <div class="section-title">Fechas</div>
 
-          <div class="date-group">
-            <div class="field">
-              <label>Fecha de ingreso</label>
-              <div class="date-row">
-                <input type="number" id="ingresoDia" placeholder="Día" min="1" max="31" required />
-                <input type="number" id="ingresoMes" placeholder="Mes" min="1" max="12" required />
-                <input type="number" id="ingresoAnio" placeholder="Año" min="1900" max="2100" required />
-              </div>
-            </div>
-
-            <div class="field">
-              <label>Fecha de baja</label>
-              <div class="date-row">
-                <input type="number" id="bajaDia" placeholder="Día" min="1" max="31" required />
-                <input type="number" id="bajaMes" placeholder="Mes" min="1" max="12" required />
-                <input type="number" id="bajaAnio" placeholder="Año" min="1900" max="2100" required />
-              </div>
+        <div class="date-group">
+          <div class="field">
+            <label>Fecha de ingreso</label>
+            <div class="date-row">
+              <input type="number" id="ingresoDia" placeholder="Día" min="1" max="31" required />
+              <input type="number" id="ingresoMes" placeholder="Mes" min="1" max="12" required />
+              <input type="number" id="ingresoAnio" placeholder="Año" min="1900" max="2100" required />
             </div>
           </div>
 
-          <div class="section-title">Datos de cálculo</div>
-
-          <div class="grid">
-            <div class="field">
-              <label for="tipoSalida">Tipo de salida</label>
-              <select id="tipoSalida" required>
-                <option value="renuncia">Renuncia</option>
-                <option value="despido_justificado">Despido justificado</option>
-                <option value="despido_injustificado">Despido injustificado</option>
-              </select>
+          <div class="field">
+            <label>Fecha de baja</label>
+            <div class="date-row">
+              <input type="number" id="bajaDia" placeholder="Día" min="1" max="31" required />
+              <input type="number" id="bajaMes" placeholder="Mes" min="1" max="12" required />
+              <input type="number" id="bajaAnio" placeholder="Año" min="1900" max="2100" required />
             </div>
+          </div>
+        </div>
 
-            <div class="field">
-              <label for="salarioMensual">Salario mensual</label>
-              <input type="number" id="salarioMensual" min="0" step="0.01" placeholder="Ej. 12000" required />
+        <div class="section-title">Datos de cálculo</div>
+
+        <div class="grid">
+          <div class="field">
+            <label for="tipoSalida">Tipo de salida</label>
+            <select id="tipoSalida" required>
+              <option value="renuncia">Renuncia</option>
+              <option value="despido_justificado">Despido justificado</option>
+              <option value="despido_injustificado">Despido injustificado</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="salarioMensual">Salario mensual</label>
+            <input type="number" id="salarioMensual" min="0" step="0.01" placeholder="Ej. 12000" required />
+          </div>
+
+          <div class="field">
+            <label for="salarioPendienteDias">Días de salario pendiente</label>
+            <input type="number" id="salarioPendienteDias" min="0" step="1" value="0" required />
+          </div>
+
+          <div class="field">
+            <label for="aguinaldoDias">Días de aguinaldo</label>
+            <input type="number" id="aguinaldoDias" min="0" step="1" value="15" required />
+          </div>
+
+          <div class="field">
+            <label for="primaVacacional">Prima vacacional (%)</label>
+            <input type="number" id="primaVacacional" min="0" step="1" value="25" required />
+          </div>
+
+          <div class="field">
+            <label for="vacacionesPorAno">Días de vacaciones por año</label>
+            <input type="number" id="vacacionesPorAno" min="0" step="1" value="12" required />
+          </div>
+
+          <div class="field">
+            <label for="vacacionesPendientes">Días de vacaciones pendientes</label>
+            <input type="number" id="vacacionesPendientes" min="0" step="1" value="0" required />
+          </div>
+
+          <div class="field">
+            <label for="primaAntiguedad">Incluir prima de antigüedad</label>
+            <select id="primaAntiguedad">
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button type="submit">Calcular</button>
+          <button type="button" id="resetBtn" class="secondary">Limpiar</button>
+        </div>
+      </form>
+
+      <!-- 📊 RESULTADOS -->
+      <section class="results">
+        <h2>Resultado</h2>
+        <p id="summaryText">Aquí aparecerá el desglose del cálculo.</p>
+
+        <div id="errorBox" class="error" hidden></div>
+
+        <div id="resultsBox" class="breakdown" hidden>
+          <div class="mini-grid">
+            <div class="mini-card">
+              <span>Años trabajados</span>
+              <strong id="yearsWorked">0</strong>
             </div>
-
-            <div class="field">
-              <label for="salarioPendienteDias">Días de salario pendiente</label>
-              <input type="number" id="salarioPendienteDias" min="0" step="1" value="0" required />
+            <div class="mini-card">
+              <span>Días trabajados</span>
+              <strong id="daysWorked">0</strong>
             </div>
-
-            <div class="field">
-              <label for="aguinaldoDias">Días de aguinaldo</label>
-              <input type="number" id="aguinaldoDias" min="0" step="1" value="15" required />
+            <div class="mini-card">
+              <span>Salario diario</span>
+              <strong id="dailySalary">$0.00</strong>
             </div>
-
-            <div class="field">
-              <label for="primaVacacional">Prima vacacional (%)</label>
-              <input type="number" id="primaVacacional" min="0" step="1" value="25" required />
-            </div>
-
-            <div class="field">
-              <label for="vacacionesPorAno">Días de vacaciones por año</label>
-              <input type="number" id="vacacionesPorAno" min="0" step="1" value="12" required />
-            </div>
-
-            <div class="field">
-              <label for="vacacionesPendientes">Días de vacaciones pendientes</label>
-              <input type="number" id="vacacionesPendientes" min="0" step="1" value="0" required />
-            </div>
-
-            <div class="field">
-              <label for="primaAntiguedad">Incluir prima de antigüedad</label>
-              <select id="primaAntiguedad">
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
+            <div class="mini-card">
+              <span>Finiquito bruto</span>
+              <strong id="grossFiniquito">$0.00</strong>
             </div>
           </div>
 
-          <div class="buttons">
-            <button type="submit">Calcular</button>
-            <button type="button" id="resetBtn" class="secondary">Limpiar</button>
-          </div>
-        </form>
-
-        <section class="results">
-          <h2>Resultado</h2>
-          <p id="summaryText">Aquí aparecerá el desglose del cálculo.</p>
-
-          <div id="errorBox" class="error" hidden></div>
-
-          <div id="resultsBox" class="breakdown" hidden>
-            <div class="mini-grid">
-              <div class="mini-card">
-                <span>Años trabajados</span>
-                <strong id="yearsWorked">0</strong>
-              </div>
-              <div class="mini-card">
-                <span>Días trabajados</span>
-                <strong id="daysWorked">0</strong>
-              </div>
-              <div class="mini-card">
-                <span>Salario diario</span>
-                <strong id="dailySalary">$0.00</strong>
-              </div>
-              <div class="mini-card">
-                <span>Finiquito bruto</span>
-                <strong id="grossFiniquito">$0.00</strong>
-              </div>
+          <div class="detail-list">
+            <div class="row">
+              <span>Aguinaldo proporcional</span>
+              <strong id="aguinaldoValue">$0.00</strong>
             </div>
-
-            <div class="detail-list">
-              <div class="row">
-                <span>Aguinaldo proporcional</span>
-                <strong id="aguinaldoValue">$0.00</strong>
-              </div>
-              <div class="row">
-                <span>Vacaciones pendientes</span>
-                <strong id="vacationValue">$0.00</strong>
-              </div>
-              <div class="row">
-                <span>Prima vacacional</span>
-                <strong id="vacationPremiumValue">$0.00</strong>
-              </div>
-              <div class="row">
-                <span>Salario pendiente</span>
-                <strong id="salaryPendingValue">$0.00</strong>
-              </div>
-              <div class="row">
-                <span>Prima de antigüedad</span>
-                <strong id="seniorityValue">$0.00</strong>
-              </div>
-              <div class="row">
-                <span>ISR por finiquito</span>
-                <strong id="isrFiniquitoValue">$0.00</strong>
-              </div>
-              <div class="row">
-                <span>ISR por liquidación</span>
-                <strong id="isrLiquidacionValue">$0.00</strong>
-              </div>
-              <div class="row total">
-                <span>Total estimado</span>
-                <strong id="totalValue">$0.00</strong>
-              </div>
+            <div class="row">
+              <span>Vacaciones pendientes</span>
+              <strong id="vacationValue">$0.00</strong>
             </div>
-
-            <p class="note">
-              El ISR es estimado. Para un cálculo exacto se requiere la tabla vigente del SAT y analizar el caso específico.
-            </p>
+            <div class="row">
+              <span>Prima vacacional</span>
+              <strong id="vacationPremiumValue">$0.00</strong>
+            </div>
+            <div class="row">
+              <span>Salario pendiente</span>
+              <strong id="salaryPendingValue">$0.00</strong>
+            </div>
+            <div class="row">
+              <span>Prima de antigüedad</span>
+              <strong id="seniorityValue">$0.00</strong>
+            </div>
+            <div class="row">
+              <span>ISR por finiquito</span>
+              <strong id="isrFiniquitoValue">$0.00</strong>
+            </div>
+            <div class="row">
+              <span>ISR por liquidación</span>
+              <strong id="isrLiquidacionValue">$0.00</strong>
+            </div>
+            <div class="row total">
+              <span>Total estimado</span>
+              <strong id="totalValue">$0.00</strong>
+            </div>
           </div>
-        </section>
+
+          <p class="note">
+            El ISR es estimado. Para un cálculo exacto se requiere la tabla vigente del SAT y analizar el caso específico.
+          </p>
+        </div>
       </section>
+    </section>
 
-      <section class="card info-card">
-        <h2>¿Qué es el finiquito?</h2>
-        <p>
-          El finiquito es el pago que recibe un trabajador al terminar su relación laboral.
-          Incluye prestaciones proporcionales como aguinaldo, vacaciones, prima vacacional
-          y cualquier salario pendiente.
-        </p>
+    <!-- 🔥 CONTENIDO EXTRA (SEO REAL) -->
+    <section class="card">
+      <h2>¿Qué es el finiquito?</h2>
+      <p>
+        El finiquito es el pago que recibe un trabajador al terminar su relación laboral.
+        Incluye prestaciones proporcionales como aguinaldo, vacaciones, prima vacacional
+        y cualquier salario pendiente.
+      </p>
 
-        <h2>¿Qué es la liquidación?</h2>
-        <p>
-          La liquidación aplica en casos de despido injustificado e incluye indemnización,
-          prima de antigüedad y otros pagos establecidos por la ley.
-        </p>
+      <h2>¿Qué es la liquidación?</h2>
+      <p>
+        La liquidación aplica en casos de despido injustificado e incluye indemnización,
+        prima de antigüedad y otros pagos establecidos por la ley.
+      </p>
 
-        <h2>¿Para qué sirve esta calculadora?</h2>
-        <p>
-          Esta herramienta te ayuda a obtener un estimado rápido de tu finiquito en México.
-          Es útil para tener una referencia antes de recibir tu pago final.
-        </p>
-      </section>
+      <h2>¿Para qué sirve esta calculadora?</h2>
+      <p>
+        Esta herramienta te ayuda a obtener un estimado rápido de tu finiquito en México.
+        Es útil para tener una referencia antes de recibir tu pago final.
+      </p>
+    </section>
 
-    </div>
   </main>
 
   <footer style="text-align:center; padding:20px; font-size:14px; opacity:0.7;">
@@ -225,6 +235,7 @@
 
   <script src="script.js"></script>
 
+  <!-- SEO estructurado -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -236,5 +247,6 @@
     "description": "Calculadora gratuita para estimar finiquito y liquidación en México."
   }
   </script>
+
 </body>
 </html>
